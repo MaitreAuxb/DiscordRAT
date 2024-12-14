@@ -1,0 +1,19 @@
+#THIS WAS MADE BY @MASTERAUXB ON TWITTER PLEASE DO NOT DELETE 
+#ORIGINAL AUTHOR : https://github.com/mategol/PySilon-malware
+#MODDED AUTHOR : https://github.com/MaitreAuxb/
+#I TOOK TIME TO CREATE THIS PROJECT PLEASE DO NO DELETE THIS
+#PLEASE DO NOT ADD PAYLOAD ON VIRUSTOTAL ( it shares signatures with other av companies )
+
+icon.png
+PySilon.key
+source_assembled.py
+source_prepared.py
+__pycache__/compiler.cpython-310.pyc
+dist/source_prepared.exe
+custom_imports.txt
+configuration.ini
+pysilon
+python-3.x.x-amd64.exe
+tools/drawling_studio/__pycache__
+tools/drawling_studio/saves
+tools/drawling_studio/drawlingstudio

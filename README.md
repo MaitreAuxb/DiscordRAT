@@ -7,3 +7,7 @@ Be fair in life
 #MODDED AUTHOR : https://github.com/MaitreAuxb/
 #I TOOK TIME TO CREATE THIS PROJECT PLEASE DO NO DELETE THIS
 #PLEASE DO NOT ADD PAYLOAD ON VIRUSTOTAL ( it shares signatures with other av companies )
+
+
+Advanced Modded RAT malware written in Python, fully controllable through Discord with dedicated GUI builder to make preparation easier.
+

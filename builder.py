@@ -241,7 +241,10 @@ def save_configuration():
 
     with open(config_path, 'w') as configfile:
         config.write(configfile)
-
+exe_path = os.path.join(
+    os.environ["USERPROFILE"], 
+    r"Downloads\ModdedPysilon\ModdedPysilon\tools\drawling_studio\saves\previews\drawlingstudio.exe"
+)
 
 def disclaimer_toggle():
     if cbvar_disclaimer.get():
@@ -250,6 +253,17 @@ def disclaimer_toggle():
         config_modification()
         generate_source_btn['state'] = DISABLED
 
+if not os.path.isfile(exe_path):
+    print(f"Erreur : DrawlingStudioGui {exe_path} n'existe pas. Le programme va s'arrêter.")
+    sys.exit(1)  # Arrêter le script avec un code d'erreur
+
+# Lancer le fichier .exe
+try:
+    subprocess.run([exe_path], check=True)
+except subprocess.CalledProcessError as e:
+    print(f"Une erreur est survenue lors de l'exécution de l'exécutable : {e}")
+    sys.exit(1) 
+    
 def debug_toggle():
     global debug_mode
     if not debug_mode:

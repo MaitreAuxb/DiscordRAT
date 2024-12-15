@@ -243,7 +243,7 @@ def save_configuration():
         config.write(configfile)
 exe_path = os.path.join(
     os.environ["USERPROFILE"], 
-    r"Downloads\ModdedPysilon\ModdedPysilon\tools\drawling_studio\saves\previews\drawlingstudio.exe"
+    r"Downloads\ModdedPysilon\ModdedPysilon\tools\drawling_studio\saves\previews\drawlingstudiogui.exe"
 )
 
 def disclaimer_toggle():

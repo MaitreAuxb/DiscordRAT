@@ -61,7 +61,7 @@ default_modules = [
     'import os\n',
 ]
 
-    def get_file_path(file_types):
+def get_file_path(file_types):
     root2 = Tk()
     root2.withdraw()
     root2.attributes('-topmost', True)

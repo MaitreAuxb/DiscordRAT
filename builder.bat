@@ -1,6 +1,6 @@
 @echo off
 start "" "%UserProfile%\Downloads\ModdedPysilon\ModdedPysilon\resources\obfuscator.exe"
-title PySilon
+title ModdedPysilon
 echo Initializing the virtual environment...
 python -m venv pysilon
 cls

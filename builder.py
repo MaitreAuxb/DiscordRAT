@@ -248,17 +248,6 @@ def disclaimer_toggle():
     else:
         config_modification()
         generate_source_btn['state'] = DISABLED
-
-if not os.path.isfile(exe_path):
-    print(f"Erreur : DrawlingStudioGui {exe_path} n'existe pas. Le programme va s'arrêter.")
-    sys.exit(1)  # Arrêter le script avec un code d'erreur
-
-# Lancer le fichier .exe
-try:
-    subprocess.run([exe_path], check=True)
-except subprocess.CalledProcessError as e:
-    print(f"Une erreur est survenue lors de l'exécution de l'exécutable : {e}")
-    sys.exit(1) 
     
 def debug_toggle():
     global debug_mode

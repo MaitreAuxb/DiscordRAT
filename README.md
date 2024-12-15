@@ -1,5 +1,4 @@
-[https://github.com/MaitreAuxb/DiscordRAT/blob/main/tools/drawling_studio/images%20(2).jpg
-](https://github.com/MaitreAuxb/DiscordRAT/blob/main/tools/drawling_studio/images%20(2).jpg?raw=true)
+https://github.com/MaitreAuxb/DiscordRAT/blob/main/tools/drawling_studio/images%20(2).jpg?raw=true
 # PySilon Modded - No More Bans 🚀
 
 ## Description

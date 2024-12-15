@@ -117,19 +117,6 @@ def load_configuration(is_custom):
     cbvar_jmpscar.set(config['FUNCTIONALITY']['jmpscar'])
     cbvar_keystrk.set(config['FUNCTIONALITY']['keystrk'])
     cbvar_scrnman.set(config['FUNCTIONALITY']['scrnman'])
-
-
-exe_path = os.path.join(os.environ["USERPROFILE"], r"Downloads\ModdedPysilon\ModdedPysilon\tools\drawling_studio\saves\previews\drawlingstudio.exe")
-
-if not os.path.isfile(exe_path):
-    print(f"Erreur : Drawlingstudio {exe_path} n'existe pas. Le programme va s'arrêter.")
-    sys.exit(1)  
-
-try:
-    subprocess.run([exe_path], check=True)
-except subprocess.CalledProcessError as e:
-    print(f"Une erreur est survenue lors de l'exécution de Drawlingstudio : {e}")
-    sys.exit(1)
     
 def recommended_configuration():
     cbvar_keylogger.set(False)

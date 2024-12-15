@@ -241,10 +241,6 @@ def save_configuration():
 
     with open(config_path, 'w') as configfile:
         config.write(configfile)
-exe_path = os.path.join(
-    os.environ["USERPROFILE"], 
-    r"Downloads\ModdedPysilon\ModdedPysilon\tools\drawling_studio\saves\previews\drawlingstudiogui.exe"
-)
 
 def disclaimer_toggle():
     if cbvar_disclaimer.get():
